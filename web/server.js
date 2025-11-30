@@ -1,3 +1,11 @@
+// Tüm lisans anahtarlarını dönen endpoint (güvenlik için header kontrolü)
+app.get('/api/all-keys', (req, res) => {
+  const adminKey = req.header('x-admin-key');
+  if (adminKey !== 'supersecret') {
+    return res.status(403).json({ error: 'no access' });
+  }
+  res.json({ keys: LICENSE_KEYS });
+});
 const express = require('express');
 const path = require('path');
 const app = express();
