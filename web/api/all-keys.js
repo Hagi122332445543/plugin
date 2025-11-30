@@ -1,16 +1,16 @@
 const LICENSE_KEYS = [
   {
-    Key: 'DEMO262',
+    Key: 'DEMO26222',
     Username: 'Arsenalplayer191763',
     endingTime: '31-12-2025'
   },
   {
-    Key: 'ABC123',
+    Key: '8UZUNLUK',
     Username: '',
     endingTime: '01-01-2026'
   },
   {
-    Key: 'DEF456',
+    Key: 'DEF456AAA',
     Username: '',
     endingTime: '15-06-2026'
   }
@@ -22,3 +22,4 @@ export default function handler(req, res) {
   }
   res.json({ keys: LICENSE_KEYS });
 }
+
