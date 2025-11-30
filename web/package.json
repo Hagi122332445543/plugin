@@ -1,0 +1,12 @@
+{
+  "name": "roblox-plugin-license-api",
+  "version": "1.0.0",
+  "description": "Roblox Studio plugin için lisans anahtarı doğrulayan web API ve ana sayfa.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
