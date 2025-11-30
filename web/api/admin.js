@@ -1,6 +1,6 @@
 // Admin User ID'lerini dönen endpoint
 const ADMIN_USER_IDS = [
-  "123456789",
+  "9531355056",
   "987654321",
   "1122334455"
 ];
@@ -19,3 +19,4 @@ export default function handler(req, res) {
     res.end(JSON.stringify(data, null, 2));
   }
 }
+
