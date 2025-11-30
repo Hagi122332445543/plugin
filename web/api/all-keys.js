@@ -20,9 +20,5 @@ export default function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
-  const adminKey = req.headers['x-admin-key'];
-  if (adminKey !== 'supersecret') {
-    return res.status(403).json({ error: 'Not Authourized To Access' });
-  }
   res.json({ keys: LICENSE_KEYS });
 }
